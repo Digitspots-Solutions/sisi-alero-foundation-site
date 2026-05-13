@@ -1,0 +1,42 @@
+{
+  "businessName": "Sisi Alero Foundation",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Excellence in Manufacturing Solutions",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Sisi Alero Foundation. We are a leading manufacturing company committed to delivering quality products and innovative solutions. Based in Bermondas, we combine global standards with local expertise to serve businesses across Nigeria and beyond.",
+      "imagePrompt": "Modern Nigerian manufacturing facility interior with clean production lines, state-of-the-art machinery, workers in safety gear, bright industrial lighting, professional atmosphere, high-quality equipment, organized workspace, photorealistic, wide angle",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Sisi Alero Foundation stands at the forefront of Nigeria's manufacturing sector, delivering excellence through innovation and precision. Our commitment to quality and customer satisfaction drives everything we do. We leverage cutting-edge technology and skilled expertise to manufacture products that meet international standards while serving the unique needs of the Nigerian market. Our facility is equipped with modern machinery and operated by trained professionals dedicated to maintaining the highest production standards.",
+      "imagePrompt": "Professional Nigerian manufacturing team in a modern facility, diverse group of engineers and workers collaborating, industrial background with quality control equipment, bright natural lighting, confidence and professionalism, photorealistic corporate photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "At Sisi Alero Foundation, we offer comprehensive manufacturing solutions tailored to meet diverse industry needs:\n\n**Custom Manufacturing** - We produce high-quality custom products according to your specifications, ensuring precision and consistency in every batch.\n\n**Quality Assurance** - Our rigorous quality control processes guarantee that every product meets international standards and exceeds customer expectations.\n\n**Supply Chain Solutions** - We provide end-to-end supply chain management, from raw material sourcing to finished product delivery.\n\n**Technical Consultation** - Our experienced team offers expert guidance on manufacturing processes, product development, and optimization strategies.\n\n**Warehousing & Distribution** - Secure storage and efficient distribution networks ensure your products reach their destination on time.",
+      "imagePrompt": "Collage of Nigerian manufacturing processes: precision machinery in operation, quality control inspection with modern equipment, logistics and warehouse operations, technical consultation meeting, professional industrial photography, vibrant and dynamic, photorealistic",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to discuss your manufacturing needs? Get in touch with Sisi Alero Foundation today. Our team is available to answer your questions and provide tailored solutions for your business.\n\n**Location:** 6 Muirfield Close Bermondsey, Bermondas, Nigeria\n\n**Phone:** +234 7533600464\n\nWhether you need a quote, technical consultation, or want to learn more about our capabilities, we're here to help. Contact us via phone or WhatsApp for immediate assistance.",
+      "imagePrompt": "Professional Nigerian customer service representative at modern office desk with headset, welcoming smile, bright contemporary office environment, plants and natural light, computer screens showing business analytics, warm and approachable atmosphere, photorealistic",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 7533600464",
+    "email": "",
+    "address": "6 Muirfield Close Bermondsey, Bermondas, Nigeria",
+    "whatsapp": "https://wa.me/2347533600464"
+  }
+}
