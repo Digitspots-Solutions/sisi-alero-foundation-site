@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisi Alero Foundation - Excellence in Manufacturing Solutions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap">
+    <style>
+        :root {
+            --color-primary: #0f1f40;
+            --color-accent: #f4950c;
+            --color-bg: #F5F8FC;
+            --color-text: #0D2340;
+            --color-surface: #142d43;
+            --color-secondary-accent: #db4446;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Lato', sans-serif;
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-primary);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 80px 2rem;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            color: var(--color-accent);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244, 149, 12, 0.3);
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        /* Services Section */
+        #services {
+            padding: 80px 2rem;
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-container h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 2rem;
+            background: var(--color-surface);
+            color: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-container p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-item {
+            font-size: 1.2rem;
+        }
+
+        .contact-item strong {
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .about-container {
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            .about-content h2,
+            .services-container h2,
+            .contact-container h2 {
+                font-size: 2rem;
+            }
+
+            #hero,
+            #about,
+            #services,
+            #contact {
+                padding: 48px 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Sisi Alero Foundation</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/30990849/pexels-photo-30990849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Manufacturing facility" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Sisi Alero Foundation</h1>
+            <p class="hero-tagline">Excellence in Manufacturing Solutions</p>
+            <p>Welcome to Sisi Alero Foundation. We are a leading manufacturing company committed to delivering quality products and innovative solutions. Based in Bermondas, we combine global standards with local expertise to serve businesses across Nigeria and beyond.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="https://images.pexels.com/photos/37198885/pexels-photo-37198885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Manufacturing team" class="about-image">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Sisi Alero Foundation stands at the forefront of Nigeria's manufacturing sector, delivering excellence through innovation and precision. Our commitment to quality and customer satisfaction drives everything we do. We leverage cutting-edge technology and skilled expertise to manufacture products that meet international standards while serving the unique needs of the Nigerian market. Our facility is equipped with modern machinery and operated by trained professionals dedicated to maintaining the highest production standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing</h3>
+                    <p>We produce high-quality custom products according to your specifications, ensuring precision and consistency in every batch.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Assurance</h3>
+                    <p>Our rigorous quality control processes guarantee that every product meets international standards and exceeds customer expectations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Supply Chain Solutions</h3>
+                    <p>We provide end-to-end supply chain management, from raw material sourcing to finished product delivery.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Technical Consultation</h3>
+                    <p>Our experienced team offers expert guidance on manufacturing processes, product development, and optimization strategies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Warehousing & Distribution</h3>
+                    <p>Secure storage and efficient distribution networks ensure your products reach their destination on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Ready to discuss your manufacturing needs? Get in touch with Sisi Alero Foundation today. Our team is available to answer your questions and provide tailored solutions for your business.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Location:</strong>
+                    6 Muirfield Close Bermondsey, Bermondas, Nigeria
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+2347533600464">+234 7533600464</a>
+                </div>
+            </div>
+            <p>Whether you need a quote, technical consultation, or want to learn more about our capabilities, we're here to help. Contact us via phone or WhatsApp for immediate assistance.</p>
+            <a href="https://wa.me/2347533600464" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sisi Alero Foundation. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2347533600464" class="whatsapp-float" target="_blank">
+        <span>&#10148;</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
