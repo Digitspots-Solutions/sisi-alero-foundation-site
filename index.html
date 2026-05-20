@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sisi Alero Foundation - Excellence in Manufacturing Solutions</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap">
+    <title>Allen Peace Oilfield Services Limited - Engineering Excellence in Nigeria's Energy Sector</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap">
     <style>
         :root {
-            --color-primary: #0f1f40;
-            --color-accent: #f4950c;
-            --color-bg: #F5F8FC;
-            --color-text: #0D2340;
-            --color-surface: #142d43;
-            --color-secondary-accent: #db4446;
-            --font-display: 'Playfair Display', serif;
+            --color-primary: #09121f;
+            --color-accent: #e39e18;
+            --color-bg: #F8F4EE;
+            --color-text: #0C1E30;
+            --color-surface: #182d42;
+            --color-secondary-accent: #5ca4b5;
+            --font-display: 'Spectral', serif;
             --font-body: 'Lato', sans-serif;
-            --border-radius: 12px;
+            --border-radius: 2px;
         }
 
         * {
@@ -35,9 +35,9 @@
             line-height: 1.6;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4 {
             font-family: var(--font-display);
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
         }
 
@@ -56,17 +56,16 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(248, 244, 238, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -75,7 +74,7 @@
         .logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--color-primary);
         }
 
@@ -159,31 +158,30 @@
         }
 
         .mobile-menu ul a:hover {
-            color: var(--color-primary);
+            color: var(--color-accent);
         }
 
         /* Hero Section */
         #hero {
             position: relative;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
-            padding: 80px 2rem;
             overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        .hero-bg {
+        .hero-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -2;
+            z-index: 1;
         }
 
         .hero-overlay {
@@ -193,23 +191,25 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: -1;
+            z-index: 2;
         }
 
         .hero-content {
+            position: relative;
+            z-index: 3;
             max-width: 900px;
-            z-index: 1;
+            padding: 2rem;
         }
 
         .hero-content h1 {
             font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
 
-        .hero-tagline {
+        .hero-content .tagline {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-weight: 300;
             color: var(--color-accent);
         }
@@ -222,31 +222,50 @@
 
         .cta-button {
             display: inline-block;
-            background: var(--color-accent);
-            color: white;
             padding: 1rem 2.5rem;
+            background: var(--color-accent);
+            color: var(--color-primary);
             text-decoration: none;
-            border-radius: var(--border-radius);
             font-weight: 700;
-            font-size: 1.1rem;
+            border-radius: var(--border-radius);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(227, 158, 24, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(244, 149, 12, 0.3);
+            box-shadow: 0 6px 20px rgba(227, 158, 24, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            text-align: center;
         }
 
         /* About Section */
         #about {
-            padding: 80px 2rem;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
+            background: white;
         }
 
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -258,16 +277,10 @@
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .about-content h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .about-content p {
+        .about-text p {
             font-size: 1.1rem;
             line-height: 1.8;
             color: var(--color-text);
@@ -275,149 +288,159 @@
 
         /* Services Section */
         #services {
-            padding: 80px 2rem;
-            background: white;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
+            background: var(--color-surface);
+            color: white;
         }
 
-        .services-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .services-container h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            margin-bottom: 3rem;
-            text-align: center;
+        #services .section-title {
+            color: var(--color-accent);
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
         .service-card {
-            background: var(--color-bg);
+            background: rgba(255, 255, 255, 0.05);
             padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--color-accent);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
-            color: var(--color-primary);
+            color: var(--color-accent);
             margin-bottom: 1rem;
+            font-size: 1.5rem;
         }
 
         .service-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: var(--color-text);
+            line-height: 1.8;
+        }
+
+        /* Why Choose Section */
+        #why-choose {
+            background: white;
+        }
+
+        .why-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .why-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .why-card p {
+            line-height: 1.8;
         }
 
         /* Contact Section */
         #contact {
-            padding: 80px 2rem;
-            background: var(--color-surface);
-            color: white;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-container h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+            background: var(--color-primary);
             color: white;
         }
 
-        .contact-container p {
+        #contact .section-title {
+            color: var(--color-accent);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-text p {
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 2rem;
         }
 
+        .contact-text h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
         .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin: 2rem 0;
+            margin-top: 2rem;
         }
 
         .contact-item {
-            font-size: 1.2rem;
-        }
-
-        .contact-item strong {
-            color: var(--color-accent);
-            display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
         }
 
         .contact-item a {
-            color: white;
+            color: var(--color-accent);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: opacity 0.3s ease;
         }
 
         .contact-item a:hover {
-            color: var(--color-accent);
+            opacity: 0.8;
         }
 
-        .whatsapp-btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
+        .contact-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
             border-radius: var(--border-radius);
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-top: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        .whatsapp-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        /* WhatsApp Floating Button */
+        /* WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #25D366;
-            color: white;
             width: 60px;
             height: 60px;
+            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             z-index: 999;
-            text-decoration: none;
-            font-size: 2rem;
             transition: transform 0.3s ease;
+            text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
+        }
+
+        .whatsapp-float::before {
+            content: "💬";
+            font-size: 2rem;
         }
 
         /* Footer */
@@ -426,22 +449,21 @@
             color: white;
             text-align: center;
             padding: 2rem;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.4s;
-        }
-
-        footer p {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .hero-content h1 {
-                font-size: 2.8rem;
+            section {
+                padding: 60px 2rem;
             }
 
-            .about-container {
-                gap: 3rem;
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
         }
 
@@ -454,11 +476,15 @@
                 display: flex;
             }
 
-            .hero-content h1 {
-                font-size: 2.2rem;
+            section {
+                padding: 48px 1.5rem;
             }
 
-            .hero-tagline {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content .tagline {
                 font-size: 1.2rem;
             }
 
@@ -466,38 +492,31 @@
                 font-size: 1rem;
             }
 
-            .about-container {
+            .about-content,
+            .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .about-image {
-                height: 350px;
+            .about-image,
+            .contact-image {
+                height: 300px;
             }
 
-            .about-content h2,
-            .services-container h2,
-            .contact-container h2 {
-                font-size: 2rem;
-            }
-
-            #hero,
-            #about,
-            #services,
-            #contact {
-                padding: 48px 1.5rem;
-            }
-
-            .services-grid {
+            .services-grid,
+            .why-cards {
                 grid-template-columns: 1fr;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
-                font-size: 1.5rem;
                 bottom: 20px;
                 right: 20px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -505,11 +524,12 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">Sisi Alero Foundation</div>
+            <div class="logo">Allen Peace</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose">Why Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -525,85 +545,124 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <section id="hero">
-        <img src="https://images.pexels.com/photos/30990849/pexels-photo-30990849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Manufacturing facility" class="hero-bg">
+        <img src="https://images.pexels.com/photos/33443005/pexels-photo-33443005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Offshore oil rig at golden hour" class="hero-image">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Sisi Alero Foundation</h1>
-            <p class="hero-tagline">Excellence in Manufacturing Solutions</p>
-            <p>Welcome to Sisi Alero Foundation. We are a leading manufacturing company committed to delivering quality products and innovative solutions. Based in Bermondas, we combine global standards with local expertise to serve businesses across Nigeria and beyond.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Allen Peace Oilfield Services Limited</h1>
+            <p class="tagline">Engineering Excellence in Nigeria's Energy Sector</p>
+            <p>Allen Peace Oilfield Services Limited delivers world-class upstream operations and energy logistics solutions across Nigeria's oil and gas sector. With proven expertise in oilfield services and commitment to operational excellence, we power Nigeria's energy future through safe, efficient, and sustainable practices.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
 
     <section id="about">
-        <div class="about-container">
-            <img src="https://images.pexels.com/photos/37198885/pexels-photo-37198885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Manufacturing team" class="about-image">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
             <div class="about-content">
-                <h2>About Us</h2>
-                <p>Sisi Alero Foundation stands at the forefront of Nigeria's manufacturing sector, delivering excellence through innovation and precision. Our commitment to quality and customer satisfaction drives everything we do. We leverage cutting-edge technology and skilled expertise to manufacture products that meet international standards while serving the unique needs of the Nigerian market. Our facility is equipped with modern machinery and operated by trained professionals dedicated to maintaining the highest production standards.</p>
+                <img src="https://images.pexels.com/photos/34632583/pexels-photo-34632583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Allen Peace team in office" class="about-image">
+                <div class="about-text">
+                    <p>Allen Peace Oilfield Services Limited, operating as Allen Peace Energy Logistics Co, is a leading Nigerian oil and gas service provider specializing in upstream operations management and comprehensive energy logistics solutions. Led by experienced upstream operations professionals, we deliver integrated oilfield services that meet international standards while understanding the unique demands of Nigeria's energy landscape. Our commitment to safety, operational efficiency, and environmental responsibility positions us as a trusted partner for upstream operators, major oil companies, and independent producers operating in Nigerian territory. From drilling support to logistics coordination, we provide the technical expertise and local knowledge essential for successful energy operations.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services">
-        <div class="services-container">
-            <h2>Our Services</h2>
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Manufacturing</h3>
-                    <p>We produce high-quality custom products according to your specifications, ensuring precision and consistency in every batch.</p>
+                    <h3>Upstream Operations Management</h3>
+                    <p>Comprehensive upstream operations support including drilling operations supervision, production optimization, well integrity management, and field development planning. Our team brings deep technical knowledge to maximize recovery while maintaining safety standards.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Quality Assurance</h3>
-                    <p>Our rigorous quality control processes guarantee that every product meets international standards and exceeds customer expectations.</p>
+                    <h3>Energy Logistics Solutions</h3>
+                    <p>End-to-end logistics coordination for oilfield operations including supply chain management, equipment transportation, offshore crew logistics, materials handling, and warehousing services tailored to the Nigerian oil and gas sector.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Supply Chain Solutions</h3>
-                    <p>We provide end-to-end supply chain management, from raw material sourcing to finished product delivery.</p>
+                    <h3>Oilfield Technical Services</h3>
+                    <p>Specialized technical support covering well services, production facilities maintenance, pipeline integrity management, and downstream operations consulting. We provide hands-on expertise for both onshore and offshore operations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Technical Consultation</h3>
-                    <p>Our experienced team offers expert guidance on manufacturing processes, product development, and optimization strategies.</p>
+                    <h3>HSE & Compliance Management</h3>
+                    <p>Robust health, safety, and environmental management systems aligned with Nigerian regulatory requirements and international best practices. We ensure full compliance with DPR regulations and industry standards.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Warehousing & Distribution</h3>
-                    <p>Secure storage and efficient distribution networks ensure your products reach their destination on time.</p>
+                    <h3>Project Management & Consulting</h3>
+                    <p>Strategic project management services for capital projects, field development initiatives, and operational improvements. Our consulting services help operators optimize costs while maintaining operational excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Allen Peace</h2>
+            <div class="why-cards">
+                <div class="why-card">
+                    <h3>Proven Upstream Expertise</h3>
+                    <p>Our leadership brings extensive upstream operations management experience with deep understanding of Nigerian oil and gas operations, regulatory environment, and operational challenges.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Local Knowledge, International Standards</h3>
+                    <p>We combine intimate knowledge of Nigeria's energy sector with commitment to international best practices, ensuring world-class service delivery in the local context.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Comprehensive Service Portfolio</h3>
+                    <p>From drilling support to logistics coordination, we offer integrated solutions that address the full spectrum of oilfield services requirements.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Safety-First Culture</h3>
+                    <p>Uncompromising commitment to health, safety, and environmental excellence. Zero harm is not just our goal—it's our operational standard.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Reliable Partnership</h3>
+                    <p>We understand that in oil and gas operations, reliability is everything. Our track record demonstrates consistent delivery and dependable partnership.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Strategic Location Access</h3>
+                    <p>Positioned to serve operations across Nigeria's key oil-producing regions with efficient logistics and rapid response capabilities.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact-container">
-            <h2>Contact Us</h2>
-            <p>Ready to discuss your manufacturing needs? Get in touch with Sisi Alero Foundation today. Our team is available to answer your questions and provide tailored solutions for your business.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Location:</strong>
-                    6 Muirfield Close Bermondsey, Bermondas, Nigeria
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>Partner with Allen Peace Oilfield Services Limited for reliable, professional oil and gas services across Nigeria. Our team is ready to discuss your upstream operations, logistics requirements, and technical service needs.</p>
+                    <h3>Get In Touch</h3>
+                    <p>Whether you need immediate operational support or want to explore partnership opportunities, we're here to help. Contact our team today to discuss how Allen Peace Energy Logistics Co can support your operations.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Phone:</strong> <a href="tel:+2347533600464">+234 753 360 0464</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong> <a href="mailto:info@allenpeace.com">info@allenpeace.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Serving Nigeria's Oil & Gas Sector Nationwide
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <strong>Phone:</strong>
-                    <a href="tel:+2347533600464">+234 7533600464</a>
-                </div>
+                <img src="https://images.pexels.com/photos/34823912/pexels-photo-34823912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Allen Peace office" class="contact-image">
             </div>
-            <p>Whether you need a quote, technical consultation, or want to learn more about our capabilities, we're here to help. Contact us via phone or WhatsApp for immediate assistance.</p>
-            <a href="https://wa.me/2347533600464" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Sisi Alero Foundation. All rights reserved.</p>
-    </footer>
+    <a href="https://wa.me/2347533600464" class="whatsapp-float" target="_blank" rel="noopener"></a>
 
-    <a href="https://wa.me/2347533600464" class="whatsapp-float" target="_blank">
-        <span>&#10148;</span>
-    </a>
+    <footer>
+        <p>&copy; 2025 Allen Peace Oilfield Services Limited. All rights reserved.</p>
+    </footer>
 
     <script>
         // Mobile menu toggle
