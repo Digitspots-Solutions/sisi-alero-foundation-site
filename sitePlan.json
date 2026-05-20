@@ -1,42 +1,49 @@
 {
-  "businessName": "Sisi Alero Foundation",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Excellence in Manufacturing Solutions",
+  "businessName": "Allen Peace Oilfield Services Limited",
+  "industry": "Oil & Gas Services",
+  "tone": "professional-authoritative",
+  "tagline": "Engineering Excellence in Nigeria's Energy Sector",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to Sisi Alero Foundation. We are a leading manufacturing company committed to delivering quality products and innovative solutions. Based in Bermondas, we combine global standards with local expertise to serve businesses across Nigeria and beyond.",
-      "imagePrompt": "Modern Nigerian manufacturing facility interior with clean production lines, state-of-the-art machinery, workers in safety gear, bright industrial lighting, professional atmosphere, high-quality equipment, organized workspace, photorealistic, wide angle",
+      "copy": "Allen Peace Oilfield Services Limited delivers world-class upstream operations and energy logistics solutions across Nigeria's oil and gas sector. With proven expertise in oilfield services and commitment to operational excellence, we power Nigeria's energy future through safe, efficient, and sustainable practices.",
+      "imagePrompt": "Photorealistic wide shot of modern offshore oil rig platform at golden hour in Nigerian waters, with supply vessels approaching, blue-green ocean, professional industrial photography, safety equipment visible, Nigerian flag flying, warm atmospheric lighting, 8K quality",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Sisi Alero Foundation stands at the forefront of Nigeria's manufacturing sector, delivering excellence through innovation and precision. Our commitment to quality and customer satisfaction drives everything we do. We leverage cutting-edge technology and skilled expertise to manufacture products that meet international standards while serving the unique needs of the Nigerian market. Our facility is equipped with modern machinery and operated by trained professionals dedicated to maintaining the highest production standards.",
-      "imagePrompt": "Professional Nigerian manufacturing team in a modern facility, diverse group of engineers and workers collaborating, industrial background with quality control equipment, bright natural lighting, confidence and professionalism, photorealistic corporate photography",
+      "copy": "Allen Peace Oilfield Services Limited, operating as Allen Peace Energy Logistics Co, is a leading Nigerian oil and gas service provider specializing in upstream operations management and comprehensive energy logistics solutions. Led by experienced upstream operations professionals, we deliver integrated oilfield services that meet international standards while understanding the unique demands of Nigeria's energy landscape. Our commitment to safety, operational efficiency, and environmental responsibility positions us as a trusted partner for upstream operators, major oil companies, and independent producers operating in Nigerian territory. From drilling support to logistics coordination, we provide the technical expertise and local knowledge essential for successful energy operations.",
+      "imagePrompt": "Professional corporate interior of modern oil and gas office in Lagos, large windows with city skyline view, engineering blueprints and digital screens showing pipeline schematics, diverse team in hard hats and safety gear reviewing operations, natural daylight, sleek contemporary Nigerian office design",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "At Sisi Alero Foundation, we offer comprehensive manufacturing solutions tailored to meet diverse industry needs:\n\n**Custom Manufacturing** - We produce high-quality custom products according to your specifications, ensuring precision and consistency in every batch.\n\n**Quality Assurance** - Our rigorous quality control processes guarantee that every product meets international standards and exceeds customer expectations.\n\n**Supply Chain Solutions** - We provide end-to-end supply chain management, from raw material sourcing to finished product delivery.\n\n**Technical Consultation** - Our experienced team offers expert guidance on manufacturing processes, product development, and optimization strategies.\n\n**Warehousing & Distribution** - Secure storage and efficient distribution networks ensure your products reach their destination on time.",
-      "imagePrompt": "Collage of Nigerian manufacturing processes: precision machinery in operation, quality control inspection with modern equipment, logistics and warehouse operations, technical consultation meeting, professional industrial photography, vibrant and dynamic, photorealistic",
+      "copy": "**Upstream Operations Management**\nComprehensive upstream operations support including drilling operations supervision, production optimization, well integrity management, and field development planning. Our team brings deep technical knowledge to maximize recovery while maintaining safety standards.\n\n**Energy Logistics Solutions**\nEnd-to-end logistics coordination for oilfield operations including supply chain management, equipment transportation, offshore crew logistics, materials handling, and warehousing services tailored to the Nigerian oil and gas sector.\n\n**Oilfield Technical Services**\nSpecialized technical support covering well services, production facilities maintenance, pipeline integrity management, and downstream operations consulting. We provide hands-on expertise for both onshore and offshore operations.\n\n**HSE & Compliance Management**\nRobust health, safety, and environmental management systems aligned with Nigerian regulatory requirements and international best practices. We ensure full compliance with DPR regulations and industry standards.\n\n**Project Management & Consulting**\nStrategic project management services for capital projects, field development initiatives, and operational improvements. Our consulting services help operators optimize costs while maintaining operational excellence.",
+      "imagePrompt": "Dynamic collage showing Nigerian oil and gas operations: helicopter landing on offshore platform, heavy equipment being loaded onto vessels at Port Harcourt, hardhat workers inspecting pipeline valves, modern control room with monitors, safety training session, professional industrial photography with Nigerian context",
       "layout": "grid"
+    },
+    {
+      "id": "why-choose",
+      "name": "Why Choose Allen Peace",
+      "copy": "**Proven Upstream Expertise**\nOur leadership brings extensive upstream operations management experience with deep understanding of Nigerian oil and gas operations, regulatory environment, and operational challenges.\n\n**Local Knowledge, International Standards**\nWe combine intimate knowledge of Nigeria's energy sector with commitment to international best practices, ensuring world-class service delivery in the local context.\n\n**Comprehensive Service Portfolio**\nFrom drilling support to logistics coordination, we offer integrated solutions that address the full spectrum of oilfield services requirements.\n\n**Safety-First Culture**\nUncompromising commitment to health, safety, and environmental excellence. Zero harm is not just our goal—it's our operational standard.\n\n**Reliable Partnership**\nWe understand that in oil and gas operations, reliability is everything. Our track record demonstrates consistent delivery and dependable partnership.\n\n**Strategic Location Access**\nPositioned to serve operations across Nigeria's key oil-producing regions with efficient logistics and rapid response capabilities.",
+      "imagePrompt": "Professional team of Nigerian oil and gas professionals in orange coveralls and white hard hats standing confidently at sunrise in front of modern oilfield facility, safety equipment visible, Nigerian landscape in background, inspiring and professional atmosphere, golden hour lighting",
+      "layout": "cards"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to discuss your manufacturing needs? Get in touch with Sisi Alero Foundation today. Our team is available to answer your questions and provide tailored solutions for your business.\n\n**Location:** 6 Muirfield Close Bermondsey, Bermondas, Nigeria\n\n**Phone:** +234 7533600464\n\nWhether you need a quote, technical consultation, or want to learn more about our capabilities, we're here to help. Contact us via phone or WhatsApp for immediate assistance.",
-      "imagePrompt": "Professional Nigerian customer service representative at modern office desk with headset, welcoming smile, bright contemporary office environment, plants and natural light, computer screens showing business analytics, warm and approachable atmosphere, photorealistic",
-      "layout": "centered"
+      "copy": "Partner with Allen Peace Oilfield Services Limited for reliable, professional oil and gas services across Nigeria. Our team is ready to discuss your upstream operations, logistics requirements, and technical service needs.\n\n**Get In Touch**\nWhether you need immediate operational support or want to explore partnership opportunities, we're here to help. Contact our team today to discuss how Allen Peace Energy Logistics Co can support your operations.\n\n**Location**\nWe serve oil and gas operations across Nigeria with particular focus on major producing regions. Our logistics network ensures rapid response and efficient service delivery nationwide.",
+      "imagePrompt": "Modern Nigerian office reception area for oil and gas company, world map showing operations on wall, professional receptionist, clean corporate design with energy industry imagery, natural lighting through large windows, Lagos skyline visible outside, premium professional atmosphere",
+      "layout": "split"
     }
   ],
   "contact": {
-    "phone": "+234 7533600464",
-    "email": "",
-    "address": "6 Muirfield Close Bermondsey, Bermondas, Nigeria",
+    "phone": "+2347533600464",
+    "email": "info@allenpeace.com",
+    "address": "Serving Nigeria's Oil & Gas Sector Nationwide",
     "whatsapp": "https://wa.me/2347533600464"
   }
 }
